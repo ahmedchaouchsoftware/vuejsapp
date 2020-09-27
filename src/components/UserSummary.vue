@@ -1,6 +1,6 @@
 <template>
   <div class="user-summary">
-    nom : <router-link v-model="usr" v-bind:to="`/users/${usr.id}`">{{usr.name}}</router-link> <br>
+    nom : <router-link v-bind:to="`/users/${usr.id}`">{{usr.name}}</router-link> <br>
     ville: {{usr.address.city}} <br> 
     email: {{usr.email}} <br>
     <button v-on:click="acceptInvitation">accepter l'invitation</button>
